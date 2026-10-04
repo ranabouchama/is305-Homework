@@ -1,3 +1,18 @@
+"""
+Discussion Question 1:
+
+String would ultimately be less accurate, as it isn't based on Unicode but rather ASCII. Meaning that some Pokémon names 
+would not be represented correctly within the dataset. The word "Pokémon" itself wouldn't even be handled correctly, it would
+become Pokmon, as String would not recognize the "é". 
+
+Discussion Question 2:
+
+For some reason, I ended up with 946 rows, as that is just around the goal of 950, I figured it wasn't worth the trouble to
+recode it. Especially given how busy I am. At any rate, the CSV file has 980 rows; 34 of them were failures, that leaves only
+946 rows as a result.
+
+"""
+
 import csv
 from pathlib import Path
 
