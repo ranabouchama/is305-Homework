@@ -1,0 +1,10 @@
+Discussion Question 1:
+Well logically, we would need to start with collecting the unique letter pairs because we can't determine the shape of the matrix or count whats within the matrix without it.
+Then, we can deduce how big/small the matrix should be and finally populate it. It doesn't really make sense to do it in any other order. You would simply need to pass over
+the data twice, once to collect the unique pairs and then to count them. I'm not totally sure what the question here is asking; steps 2 and 3 predicate themselves on step 1 
+already being completed.
+
+Discussion Question 2:
+Personally, I would go for the latter. Going in and checking every possible letter pair is simply inefficient. At the end of the day you would have data that is polluted by 
+nothing but zeroes; your tables would be nothing but hundreds of zeroes in every single one. Not very readable. Although it is the more "straightforward" approach, of the two.
+Generating an empty list and then only setting existing values doesn't have that problem, although it is less clear within the code itself.
